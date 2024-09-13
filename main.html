@@ -1,36 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <title>Flowers</title>
+    <title>Lo siento, mi amor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f0f7;
+            text-align: center;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            color: #FF69B4;
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h2 {
+            color: #FF1493;
+            font-size: 2em;
+            margin: 20px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            color: #6A5ACD;
+            width: 80%;
+            margin: 0 auto;
+            animation: fadeIn 4s ease-in-out;
+        }
+        .heart {
+            font-size: 5em;
+            color: #FF69B4;
+            animation: pulse 1.5s infinite;
+        }
+        .flowers {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 100vh;
+            background: url('https://i.imgur.com/wv9z5ak.png') no-repeat center;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.7;
+            animation: float 10s infinite;
+        }
+        .button {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background-color: #FF69B4;
+            color: white;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+        .button:hover {
+            background-color: #FF1493;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
 </head>
-
 <body>
-    <div class="greetings">
-        <span>H</span>
-        <span>o</span>
-        <span>l</span>
-        <span>a</span>
-        <span>!</span>
-    </div>
-    <div class="description">
-        <span>Ya no estés triste 💖😊</span>
-    </div>
-    <div class="button">
-        <button class="botones">
-            <a href="flower.html" style="color: #fff;">¡Presiona si me quieres perdonar!</a>
-        </button>
-    </div>
-
-    <!-- Créditos -->
-    <div class="credits">
-        <p></p>
-    </div>
+    <div class="flowers"></div>
+    
+    <h1>Lo siento, mi amor</h1>
+    
+    <h2>Perdóname</h2>
+    
+    <p>
+        Sé que no actué como debía. Me equivoqué, y lamento mucho las actitudes inmaduras que tuve.
+        No hay excusas, solo quiero que sepas que estoy comprometido a ser mejor, por ti y por nosotros.
+        Eres lo más importante para mí, y no quiero que nada nos separe. Te amo profundamente.
+    </p>
+    
+    <div class="heart">❤️</div>
+    
+    <button class="button" onclick="location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">
+        Haz clic aquí para saber cuánto te amo
+    </button>
 </body>
-
 </html>
